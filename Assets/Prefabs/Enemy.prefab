@@ -132,6 +132,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
+  chaseRange: 5
 --- !u!1 &6336065443366078184
 GameObject:
   m_ObjectHideFlags: 0
