@@ -6,10 +6,11 @@ using UnityEngine;
 public class Weapon : MonoBehaviour
 {
     [SerializeField] Camera FPCamera;
-    [SerializeField] float range = 100f;
-    [SerializeField] float damage = 50f;
+    [SerializeField] float range = 50f;
+    [SerializeField] float damage = 20f;
     [SerializeField] ParticleSystem muzzleFlash;
     [SerializeField] GameObject hitEffect;
+    [SerializeField] Ammo ammoSlot;
 
     EnemyHealth enemyHealth;
 
@@ -27,8 +28,12 @@ public class Weapon : MonoBehaviour
 
     private void Shoot()
     {
-        PlayMuzzleFlash();
-        ProcessRaycast();
+        if(ammoSlot.GetCurrentAmmo() > 0)
+        {
+            PlayMuzzleFlash();
+            ProcessRaycast();
+            ammoSlot.ReduceCurrentAmount();
+        } else Debug.Log("Koniec amunicji!");
     }
 
     private void PlayMuzzleFlash()

@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class EnemyHealth : MonoBehaviour
 {
-    [SerializeField] float hitPoints = 100f;
+    [SerializeField] float hitPoints = 200f;
 
-    // create public method which reduces hitPoints by the amount of damage
     public void TakeDamage(float damage)
     {
+        BroadcastMessage("OnDamageTaken");
         hitPoints -= damage;
         
         if(hitPoints <= 0)
