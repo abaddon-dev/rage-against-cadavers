@@ -247,6 +247,7 @@ GameObject:
   m_Component:
   - component: {fileID: 574807561118740439}
   - component: {fileID: 6391722529699879478}
+  - component: {fileID: 246219519}
   m_Layer: 0
   m_Name: British BoltRifle
   m_TagString: Untagged
@@ -289,6 +290,26 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.05, y: 0.2, z: 1.06}
   m_Center: {x: 0, y: -0.06, z: 0.01}
+--- !u!114 &246219519
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 571615758397799231}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33895cc0cfd402346b97eb603db8b9e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FPCamera: {fileID: 0}
+  range: 10
+  damage: 100
+  muzzleFlash: {fileID: 0}
+  hitEffect: {fileID: 8015486701536855673, guid: 4103c3208977dba49a021d2c4fb469de,
+    type: 3}
+  ammoSlot: {fileID: 0}
+  timeBetweenShots: 3
 --- !u!1 &571672369497916307
 GameObject:
   m_ObjectHideFlags: 0

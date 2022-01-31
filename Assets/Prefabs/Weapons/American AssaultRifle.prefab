@@ -169,13 +169,14 @@ GameObject:
   - component: {fileID: 4787629316168686}
   - component: {fileID: 3539706572742946789}
   - component: {fileID: 2031754128}
+  - component: {fileID: 3437334355959567246}
   m_Layer: 0
   m_Name: American AssaultRifle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4787629316168686
 Transform:
   m_ObjectHideFlags: 0
@@ -222,12 +223,31 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FPCamera: {fileID: 0}
-  range: 100
+  range: 50
   damage: 50
   muzzleFlash: {fileID: 1459918535611198222}
   hitEffect: {fileID: 8015486701536855673, guid: 4103c3208977dba49a021d2c4fb469de,
     type: 3}
   ammoSlot: {fileID: 0}
+  timeBetweenShots: 2
+--- !u!114 &3437334355959567246
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1173155406573634}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73b096245492b3d49b61fc14691ef52d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fpsCamera: {fileID: 0}
+  fpsController: {fileID: 0}
+  zoomOutVOV: 60
+  zoomInFOV: 20
+  zoomOutSensitivity: 2
+  zoomInSensitivity: 0.5
 --- !u!1 &1582707565079042
 GameObject:
   m_ObjectHideFlags: 0

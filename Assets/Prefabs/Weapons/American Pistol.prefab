@@ -169,6 +169,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4392049516594244}
   - component: {fileID: 5682552822669726703}
+  - component: {fileID: 192413105082190840}
   m_Layer: 0
   m_Name: American Pistol
   m_TagString: Untagged
@@ -207,6 +208,26 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.05, y: 0.24, z: 0.37}
   m_Center: {x: 0, y: -0.03, z: 0.03}
+--- !u!114 &192413105082190840
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1364704855717136}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33895cc0cfd402346b97eb603db8b9e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FPCamera: {fileID: 0}
+  range: 20
+  damage: 25
+  muzzleFlash: {fileID: 4918778840419922885}
+  hitEffect: {fileID: 8015486701536855673, guid: 4103c3208977dba49a021d2c4fb469de,
+    type: 3}
+  ammoSlot: {fileID: 0}
+  timeBetweenShots: 0.5
 --- !u!1 &1616110479455776
 GameObject:
   m_ObjectHideFlags: 0
@@ -517,6 +538,12 @@ PrefabInstance:
 --- !u!4 &6347452031836624010 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3350055855090824723, guid: 4a60d8477aafac045a1f56d3a60c7813,
+    type: 3}
+  m_PrefabInstance: {fileID: 8533028212997087897}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &4918778840419922885 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 3614249443508621660, guid: 4a60d8477aafac045a1f56d3a60c7813,
     type: 3}
   m_PrefabInstance: {fileID: 8533028212997087897}
   m_PrefabAsset: {fileID: 0}
